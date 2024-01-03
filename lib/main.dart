@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:passwordvalidate/view/controller/success_provider.dart';
+import 'package:passwordvalidate/controller/success_provider.dart';
 import 'package:passwordvalidate/view/validate.dart';
 import 'package:provider/provider.dart';
 
@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (context) => SuccessProvider())
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
